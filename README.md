@@ -1,6 +1,6 @@
 # Jira-Scan
 
-
+ONLY TESTED WITH PYTHON 3
 
 CVE-2017-9506
 
