@@ -39,7 +39,7 @@ Fun SSRF Payloads to try....
 AWS - IAM role will leak AWS key
 
 ```
-http://169.254.169.254/latest/user-data/
+http://169.254.169.254/latest/meta-data/
 ```
 
 Alibaba
