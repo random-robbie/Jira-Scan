@@ -6,6 +6,10 @@ Provide a list of websites to test with out the http or https and this will test
 
 ![Alt text](https://pbs.twimg.com/media/Dbi_F_9X4AAjaB3.jpg:large "Screenshot")
 
+Use a VPS from DO
+
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=e22bbff5f6f1&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
 CVE-2017-9506
 -----
 
